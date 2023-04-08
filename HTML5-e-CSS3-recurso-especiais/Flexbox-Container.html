@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>FlexBox-Flexive Box Layout</title>
+    <meta charset="uft-8">
+    <style type="text/css">
+        #conteudo {
+            background: #dcdcdc;
+            width: 230px;
+            /*largura*/
+            height: 600px;
+            /*altura*/
+            display: flex;
+
+            flex-direction: row;
+            /*valores da propriedade flex-direction:row | row-reverse | column | column-reverse */
+
+
+            flex-wrap: wrap;
+            /*propriedade do flex-wrap : nowrap|wrap|wrap-reverse*/
+
+            justify-content: flex-start;
+            /*propriedades do justify-content:flex-start | flex-end| center | space-between | space-around faz a distribução de um conteúdo */
+           
+           
+            align-items: center ;
+            /*Propriedade do align-items: Stretch | center | flex-start |flex-end |baseline */
+
+        }
+
+        .item {
+            
+            background: white;
+            border: 1px solid gray;
+            margin: 10px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <div id="conteudo">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+        <div class="item">05 MAIS CONTEUDO</div>
+    </div>
+</body>
+
+</html>
